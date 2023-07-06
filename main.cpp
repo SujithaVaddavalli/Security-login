@@ -2,8 +2,9 @@
 #include<fstream>//used for file handling operations
 #include<sstream>//provides templates to enter objects of type string buffer and string type
 #include<string>
+
 using namespace std;
-void forgot();
+
 int main(){
  int a,i=0;
  string text, old , password1, password2 , pass, name , password0, age, user, word , word1;
@@ -16,6 +17,7 @@ int main(){
 
 cout<< "       4. End Programm         "<<endl;
  cout<<"______________________________________"<<endl<<endl;
+
  do{
     cout<<endl<<endl;
     cout<<"Enter your choice:-  ";
@@ -39,6 +41,7 @@ cout<< "       4. End Programm         "<<endl;
             cout<<"Registration Successful"<<endl;
         }
         break;
+
     }
     case 2:{
     i=0;
@@ -78,6 +81,8 @@ cout<< "       4. End Programm         "<<endl;
         }
     }
 
+
+
     break;
     }
     case 3:{
@@ -94,7 +99,8 @@ cout<< "       4. End Programm         "<<endl;
                 iss>>word1;
                 cp[i]=word1;
                 i++;
-}
+
+            }
             if(old==cp[1]){
                 of0.close();
 
@@ -130,7 +136,7 @@ cout<< "       4. End Programm         "<<endl;
     case 4:
         {
 
-            forgot();
+            cout<<"ThankYOU";
             break;
         }
     default:
@@ -138,8 +144,15 @@ cout<< "       4. End Programm         "<<endl;
     }
  }
 
- }
+
+
+
+
+
 
  while(a!=4);
  return 0;
+
+
+
 }
